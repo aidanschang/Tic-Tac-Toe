@@ -24,7 +24,7 @@ Player 1, please enter row and column separated by space: 0 b
 When a draw occured, the game automatically restart as below:
 
 Player 1, please enter row and column separated by space: 2 c
-   a  b  c
+   a  b  c\
 0 [2, 1, 2]\
 1 [1, 1, 2]\
 2 [1, 2, 1]\
@@ -33,7 +33,7 @@ Welcome to Aidan's Tic Tac Toe!!
 
 ---
 
-   a  b  c
+   a  b  c\
 0 [2, 1, 2]\
 1 [1, 1, 2]\
 2 [1, 2, 1]\
