@@ -6,7 +6,7 @@ This tic tac toe game was wrote shortly after I finished my Information Structur
 ## User Interaction
 
 ### Duplicate placement
-From the user experience perspective, I made sure to handle duplicate placement more interactive as below:
+I raised an AttributeError when a player's input equals to 1 or 2 and AttributeError triggers except AttributeError. Results shown below:
   
 ![image](https://user-images.githubusercontent.com/84875731/149072117-b09a4d9c-292e-483d-8137-63004a02a16b.png)
 
