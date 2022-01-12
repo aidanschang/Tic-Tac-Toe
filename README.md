@@ -11,7 +11,7 @@ From the user experience perspective, I made sure to handle duplicate placement 
 ![image](https://user-images.githubusercontent.com/84875731/149072117-b09a4d9c-292e-483d-8137-63004a02a16b.png)
 
 ### Draw
-When a draw occured, the game automatically restart as below:
+Tic Tac Toe is a game with 9 moves the most. As long as I am counting each player's move, I can easily track if a draw occured. In that case, the game automatically restart as below:
 
 ![image](https://user-images.githubusercontent.com/84875731/149072558-c088e6dd-e70c-4e1e-8457-c38c2d167eeb.png)
 
