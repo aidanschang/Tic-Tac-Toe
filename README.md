@@ -16,9 +16,9 @@ Tic Tac Toe is a game with 9 moves the most. As long as I am counting each playe
 ![image](https://user-images.githubusercontent.com/84875731/149072558-c088e6dd-e70c-4e1e-8457-c38c2d167eeb.png)
 
 ### Play Again
-When a player won, it ask players if they want to play again. If yes, the game restart as below:
+When a player won, it ask players if they want to play again. If yes, the game restart and the letter can be lower or uppercase. I think it's a nice little touch.
 
 ![image](https://user-images.githubusercontent.com/84875731/149072660-7638c1f1-a15a-4e50-986e-f23f31882be0.png)
 
-or
+
 
