@@ -12,14 +12,17 @@ def game_set(player, row, column):
     elif player == '2':
         mark = 2
         n = 2
+    # a,b,c is used to determine which index in a nested list that the player chose
     if column == 'a':
         index_c= 0
     elif column == 'b':
         index_c = 1
     elif column == 'c':
         index_c = 2
+    #see if user placement has a value of 1 or 2, if yes, raise AttributeError
     if game_board[index_r][index_c] in range(1,3):
          raise AttributeError
+    #mark the game board with player's move
     else:
         game_board[index_r][index_c]= mark
 
@@ -29,27 +32,28 @@ def game_set(player, row, column):
         print(row_index, board)
 
     #check if a player has won the game
+
     if game_board[0]== [n, n, n] or game_board[1]== [n, n, n] or game_board[2]== [n, n, n]:
-        print("Player 1 win!")
+        print("\nPlayer {} win!".format(player))
         raise LookupError
     elif game_board[0][0] == n and game_board[1][0] == n and game_board[2][0] == n:
-        print("player 1 win!")
+        print("\nPlayer {} win!".format(player))
         c=12
         raise LookupError
     elif game_board[0][1] == n and game_board[1][1] == n and game_board[2][1] == n:
-        print("player 1 win!")
+        print("\nPlayer {} win!".format(player))
         c=12
         raise LookupError
     elif game_board[0][2] == n and game_board[1][2] == n and game_board[2][2] == n:
-        print("player 1 win!")
+        print("\nPlayer {} win!".format(player))
         c=12
         raise LookupError
     elif game_board[0][0] == n and game_board[1][1] == n and game_board[2][2] == n:
-        print("player 1 win!")
+        print("\nPlayer {} win!".format(player))
         c=12
         raise LookupError
     elif game_board[0][2] == n and game_board[1][1] == n and game_board[2][0] == n:
-        print("player 1 win!")
+        print("\nPlayer {} win!".format(player))
         c=12
         raise LookupError
 
@@ -58,15 +62,21 @@ while True:
     print("   a  b  c  ")
     for row_index, board in enumerate(game_board):
             print(row_index, board)
-    c = 2
-    while c < 12:
-        if c== 11:
+
+    #c represents number of rounds but -2
+    c = 0
+
+    while c < 10:
+        if c== 9:
+            #Draw if total moves combined equals to 9
             print("Draw!")
+            # if draw, reset the board
+            game_board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
             c = 12
             break
         if c%2==0:
             try:
-                row, column = input("Player 1, please enter row and column separated by space: ").split(' ')
+                row, column = input("\nPlayer 1, please enter row and column separated by space: ").split(' ')
                 player = '1'
                 game_set(player, row, column)
                 c+= 1
@@ -76,11 +86,11 @@ while True:
             except LookupError:
                 c = 12
             except:
-                print("Input error!")
+                print("You did not place your move correctly, please re-enter!")
                 continue
         elif c%2 ==1:
             try:
-                row, column = input("Player 2, please enter row and column separated by space: ").split(' ')
+                row, column = input("\nPlayer 2, please enter row and column separated by space: ").split(' ')
                 player = '2'
                 game_set(player, row, column)
                 c+=1
@@ -88,13 +98,14 @@ while True:
                 print("Someone has already played here!")
                 continue
             except:
-                print("Input error!")
+                print("You did not place your move correctly, please re-enter!")
                 continue
     else:
-        x= input("Do you want another game(Y/N)?: ")
+        x= input("\nDo you want another game(Y/N)?: ")
+        x= x.upper()
         if x== 'Y':
             c=2
             game_board= [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
         else:
-            "Thank you for playing!"
+            print("\nThank you for playing!")
             break
