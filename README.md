@@ -1,7 +1,7 @@
 # tictactoe
 
 ## Overview
-This tic tac toe game was wrote shortly after I finished my Information Structures with Python course. After I understood how the principle of the game works, I spent a little more than an hour to complete and fine-tune the detail.
+This tic tac toe game was wrote shortly after I finished my Information Structures with Python course. It is a simple logical program that doesn't involve any complex data structure but a nested list. Therefore, after I understood the logics of how to score the game, I wrote the entire program based out of how I like to play the game. With that, I added many details to increase user experience.
 
 ## User Interaction
 
