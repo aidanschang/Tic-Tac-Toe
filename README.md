@@ -14,7 +14,7 @@ From the user experience perspective, I made sure to handle duplicate placement 
 2 [0, 0, 0]\
 Player 1, please enter row and column separated by space: 0 a
 Someone has already played here!
-Player 1, please enter row and column separated by space: 0 b
+Player 1, please enter row and column separated by space: 0 b\
    a  b  c\  
 0 [2, 1, 0]\
 1 [0, 1, 0]\
@@ -23,7 +23,7 @@ Player 1, please enter row and column separated by space: 0 b
 ### Draw
 When a draw occured, the game automatically restart as below:
 
-Player 1, please enter row and column separated by space: 2 c
+Player 1, please enter row and column separated by space: 2 c\
    a  b  c\
 0 [2, 1, 2]\
 1 [1, 1, 2]\
