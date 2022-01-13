@@ -1,12 +1,12 @@
 # Tic Tac Toe
 
 ## Overview
-This tic tac toe game was wrote shortly after I finished my Information Structures with Python course. It is a simple logical program that doesn't involve any complex data structure but a nested list. Therefore, after I understood the logics of how to score the game, I wrote the entire program based out of how I like to play the game. With that, I added many details to increase user experience.
+This tic tac toe game was wrote shortly after I finished my Information Structures with Python course in May 2021. It is a simple program that doesn't require any complex data structure, and it was an excellent practice for someone who just started learning coding. After I understood the logics to create the game board, I wrote the entire program based out of how I like to play the game. With that, I added many details to the game to further increase playability.
 
-## User Interaction
+## Player Interaction Features
 
 ### Duplicate placement
-I raised an AttributeError when a player's input equals to 1 or 2 and AttributeError triggers except AttributeError. Results shown below:
+The default value of each placement is 0. Depending on which player made the move, the placement values changes to 1 or 2. Therefore, I raised an AttributeError when a player played a move that the value of it is not 0. As results, AttributeError triggers except AttributeError and error message is printed. Results shown below:
   
 ![image](https://user-images.githubusercontent.com/84875731/149072117-b09a4d9c-292e-483d-8137-63004a02a16b.png)
 
