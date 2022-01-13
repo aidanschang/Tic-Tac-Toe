@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 ## Overview
-This tic tac toe game was wrote shortly after I finished my Information Structures with Python course in May 2021. It is a simple program that doesn't require any complex data structure, and it was an excellent practice for someone who just started learning coding. After I understood the logics to create the game board, I wrote the entire program based out of how I like to play the game. With that, I added many details to the game to further increase playability.
+This tic tac toe game was wrote shortly after I finished my Information Structures with Python course in May 2021. After I understood the logics to create the game board, I wrote the entire program based out of how I like to play the game. With that, I added many details to the game to further increase playability.
 
 ## Player Interaction Features
 
@@ -20,5 +20,6 @@ When a player has won the game, it asks players if they want to play again. If y
 
 ![image](https://user-images.githubusercontent.com/84875731/149072660-7638c1f1-a15a-4e50-986e-f23f31882be0.png)
 
-
+## Summary
+It is a simple program that doesn't require any complex data structure, but it was an excellent practice for someone who just started learning coding. The core concept of this project is to design the mechenism for validating the winning patterns. Once the core structures is in placed, it was very interesting by adding interactions wihtin the program and made it more refined.
 
