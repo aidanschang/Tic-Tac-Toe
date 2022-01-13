@@ -11,7 +11,7 @@ The default value of each placement is 0. Depending on which player made the mov
 ![image](https://user-images.githubusercontent.com/84875731/149072117-b09a4d9c-292e-483d-8137-63004a02a16b.png)
 
 ### Draw
-Tic Tac Toe is a game with 9 moves the most. As long as I am counting each player's move, I can easily track if a draw occured. In that case, the game automatically restart as below:
+Tic Tac Toe is a simple game with a total of 9 moves in one game. So if I am counting each player's move, I can easily track if a draw occured, if no one has won. If draw, the game <u>automatically</u> restart as shown below:
 
 ![image](https://user-images.githubusercontent.com/84875731/149072558-c088e6dd-e70c-4e1e-8457-c38c2d167eeb.png)
 
